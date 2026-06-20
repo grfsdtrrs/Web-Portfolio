@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { navItems, profile } from "@/data/portfolio";
+import { navItems } from "@/data/portfolio";
 
 export function Header() {
   const pathname = usePathname();
@@ -15,7 +15,7 @@ export function Header() {
       <Link href="/" className="brand" aria-label="Portfolio home">
         <span className="brand-mark" aria-hidden="true">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={profile.image} alt="" />
+          <img src="/images/Profile/GRFS.png" alt="" />
         </span>
         <span>
           <strong>Sophia Nicole Grefaldo</strong>

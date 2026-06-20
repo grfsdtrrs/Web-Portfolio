@@ -120,6 +120,7 @@ export const projects = [
   {
     title: "Bus Ticket Reservation System",
     short: "ECOM",
+    image: "/images/Profile/buslink.png",
     type: " Academic Project",
     description:
       "Developed a web-based bus reservation system using ASP.NET and Implemented basic seat booking and reservation management features",
@@ -140,14 +141,26 @@ export const projects = [
   },
   {
     title: "Unity Game – Dino-Inspired Runner",
-    short: "API",
+    short: "GAME",
+    image: "/images/Profile/dino.png",
     type: "Game Development Project",
     description:
-      "Developed a 2D endless runner game inspired by Google Dino, featuring obstacle avoidance, score tracking, and progressively increasing speed and difficulty.",
+      "Developed a 2D endless runner game featuring a Luffy-inspired character, with obstacle avoidance mechanics, score tracking, and progressively increasing speed and difficulty to enhance gameplay challenge.",    
     stack: ["Unity","C#","MySql"],
     demoUrl: "#",
     repoUrl: "#"
-  }
+  },
+  {
+    title: "Unity Game – Flappy Bird Clone",
+    short: "GAME",
+    image: "/images/Profile/flappybird.png",
+    type: "Academic Project",
+    description:
+      "Developed a 2D arcade-style game in Unity featuring a Start Game menu, leaderboard system for high-score tracking, and Exit functionality. Implemented physics-based controls, obstacle generation, collision detection, score management, and game-over mechanics to create an engaging and challenging gameplay experience.",
+    stack: ["Unity","C#","MySql"],
+    demoUrl: "#",
+    repoUrl: "#"
+  },
 ];
 
 export const experience = [

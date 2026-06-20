@@ -2,8 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-export function TypingName({ name = "Your Name" }) {
-  const words = useMemo(() => [name, "BSCS Student", "Full-Stack Developer"], [name]);
+export function TypingName({ name = "Sophia Nicole Grefaldo" }) {
+  const words = useMemo(() => [name, "Computer Science", "Full-Stack Developer", "Software Developer"], [name]);
   const [wordIndex, setWordIndex] = useState(0);
   const [letterCount, setLetterCount] = useState(0);
   const [deleting, setDeleting] = useState(false);
