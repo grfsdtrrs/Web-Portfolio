@@ -114,10 +114,15 @@ textarea {
   height: 42px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: linear-gradient(135deg, var(--accent), var(--accent-warm));
-  color: #061016;
-  font-size: 0.9rem;
-  font-weight: 900;
+  overflow: hidden;
+  background: var(--surface-strong);
+}
+
+.brand-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .brand strong,
@@ -780,6 +785,13 @@ textarea {
 .certification-card p {
   margin: 0;
   color: var(--text-muted);
+}
+
+.certification-link {
+  display: inline-flex;
+  margin-top: 16px;
+  color: var(--accent);
+  font-weight: 900;
 }
 
 .certification-image {

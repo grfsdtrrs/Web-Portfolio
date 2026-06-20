@@ -35,16 +35,16 @@ export function Hero({ landingOnly = false, onViewMore }) {
         </div>
       </div>
 
-      {!landingOnly ? <div className="hero-panel" aria-label="Portfolio profile photo">
+      <div className="hero-panel" aria-label="Portfolio profile photo">
         <div className="avatar-frame">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/profile/sng.jpg"
-            alt="Sophia Nicole Grefaldo"
+            src={profile.image}
+            alt={profile.name}
             className="avatar-image"
           />
         </div>
-      </div> : null}
+      </div>
     </section>
   );
 }

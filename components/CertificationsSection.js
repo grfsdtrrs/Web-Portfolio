@@ -16,6 +16,16 @@ export function CertificationsSection({ expanded = false }) {
               <p className="project-type">{item.issuer}</p>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
+              {item.credentialUrl ? (
+                <a
+                  className="certification-link"
+                  href={item.credentialUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Certificate
+                </a>
+              ) : null}
             </div>
           </article>
         ))}
@@ -23,8 +33,8 @@ export function CertificationsSection({ expanded = false }) {
 
       {expanded ? (
         <div className="note-panel">
-          Add certificate links, completion dates, credential IDs, seminar photos, or issuing
-          organizations here when available.
+          Add your direct certificate URLs in <code>data/portfolio.js</code> and each card will
+          show a View Certificate link automatically.
         </div>
       ) : null}
     </section>

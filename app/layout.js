@@ -2,7 +2,12 @@ import "./globals.css";
 
 export const metadata = {
   title: "Portfolio | BSCS Student",
-  description: "Modern portfolio website for a 4th year BSCS student."
+  description: "Modern portfolio website for a 4th year BSCS student.",
+  icons: {
+    icon: "/images/Profile/sng.jpg",
+    shortcut: "/images/Profile/sng.jpg",
+    apple: "/images/Profile/sng.jpg"
+  }
 };
 
 export default function RootLayout({ children }) {

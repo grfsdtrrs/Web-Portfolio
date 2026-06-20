@@ -10,6 +10,7 @@ export const navItems = [
 
 export const profile = {
   name: "Sophia Nicole Grefaldo",
+  image: "/images/Profile/sng.jpg",
   headline:
     "A 4th year Bachelor of Science in Computer Science student focused on full-stack web development, practical problem solving, and clean user experiences.",
   about:
@@ -127,8 +128,9 @@ export const projects = [
     repoUrl: "#"
   },
   {
-    title: "Connect4 Game",
-    short: "TASK",
+    title: "Modified Connect4 Game",
+    short: "GAME",
+    image: "/images/Profile/connect4.png",
     type: "Academic Project",
     description:
       "Created an interactive Connect Four game with multiplayer and AI modes, featuring game-state tracking, winner detection, and responsive gameplay.",
@@ -186,6 +188,7 @@ export const certifications = [
     date: "2026",
     title: "IBM AI Developer Professional Certificate",
     issuer: "Coursera/IBM",
+    credentialUrl: "",
     description:
       "Completed the IBM AI Developer Professional Certificate, gaining hands-on experience in artificial intelligence, machine learning fundamentals, Python programming, and AI application development."
   },
@@ -193,6 +196,7 @@ export const certifications = [
     date: "2025",
     title: "CompTIA Tech+",
     issuer: "CompTIA",
+    credentialUrl: "",
     description:
       "Earned foundational knowledge in core IT concepts including hardware, software, networking, cybersecurity, and troubleshooting through the CompTIA Tech+ certification program."
   },
@@ -200,6 +204,7 @@ export const certifications = [
     date: "2024",
     title: "Google Cloud Computing Foundations",
     issuer: "Google Cloud",
+    credentialUrl: "",
     description:
       "Completed foundational training in cloud computing through Google Cloud, covering core concepts such as cloud infrastructure, virtualization, storage, networking, and basic cloud service management."
   },
@@ -207,6 +212,7 @@ export const certifications = [
     date: "2024",
     title: "AI and Machine Learning Workshop",
     issuer: "Organization Name",
+    credentialUrl: "",
     description:
       "Placeholder for training focused on artificial intelligence, machine learning concepts, data analysis, computer vision, or chatbot development."
   }
