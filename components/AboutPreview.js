@@ -6,7 +6,7 @@ export function AboutPreview({ expanded = false }) {
     <section id="about" className="content-section about-section">
       <div className="section-heading">
         <p className="eyebrow">About</p>
-        <h2>Student developer building thoughtful software from idea to deployment.</h2>
+        <h2>Computer Science graduate building thoughtful software from idea to deployment.</h2>
       </div>
 
       <div className="about-grid">
@@ -14,9 +14,15 @@ export function AboutPreview({ expanded = false }) {
           <p>{profile.about}</p>
           {expanded ? (
             <p>
-              Add a more personal paragraph here about your academic journey, favorite technologies,
-              thesis or capstone topic, leadership experience, and the kind of team where you do your
-              best work.
+              My academic journey has centered on turning data into meaningful, real-world solutions—from
+              building DIANA, a cluster-based predictive model for Type 2 Diabetes risk using blood
+              biomarkers, to developing Palayon, a machine learning app for rice disease detection. I enjoy
+              working across the stack with Python, Kotlin, Go, and React, and I'm especially drawn to
+              projects where machine learning meets everyday problems in healthcare and agriculture. As a
+              member of the Junior Philippine Computer Society (JPCS), I've valued being part of a community
+              that pushes me to keep learning and collaborating. I do my best work in teams that value clear
+              communication, iterative feedback, and a shared drive to build software that genuinely helps
+              people.
             </p>
           ) : null}
           <div className="button-row">

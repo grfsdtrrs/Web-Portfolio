@@ -20,13 +20,6 @@ export function SkillsSection({ expanded = false }) {
           </article>
         ))}
       </div>
-
-      {expanded ? (
-        <div className="note-panel">
-          Replace these placeholders with your actual stack, certifications, coursework, and tools.
-          Keep only the skills you can confidently discuss in an interview.
-        </div>
-      ) : null}
     </section>
   );
 }

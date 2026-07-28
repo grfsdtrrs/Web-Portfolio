@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 
 export function TypingName({ name = "Sophia Nicole Grefaldo" }) {
-  const words = useMemo(() => [name, "Computer Science", "Full-Stack Developer", "Software Developer"], [name]);
+  const words = useMemo(() => [name, "Computer Science Graduate", "Full-Stack Developer", "Software Developer","Mobile App Developer"], [name]);
   const [wordIndex, setWordIndex] = useState(0);
   const [letterCount, setLetterCount] = useState(0);
   const [deleting, setDeleting] = useState(false);

@@ -30,13 +30,6 @@ export function CertificationsSection({ expanded = false }) {
           </article>
         ))}
       </div>
-
-      {expanded ? (
-        <div className="note-panel">
-          Add your direct certificate URLs in <code>data/portfolio.js</code> and each card will
-          show a View Certificate link automatically.
-        </div>
-      ) : null}
     </section>
   );
 }

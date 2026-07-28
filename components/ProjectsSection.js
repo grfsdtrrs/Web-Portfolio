@@ -39,9 +39,16 @@ export function ProjectsSection({ expanded = false }) {
                 ))}
               </div>
               <div className="project-links">
-                <a href="https://diana-v2.vercel.app/" target="_blank" rel="noopener noreferrer">
-                  Link
-                </a>
+                {project.demoUrl && project.demoUrl !== "#" ? (
+                  <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                    Live Demo
+                  </a>
+                ) : null}
+                {project.repoUrl && project.repoUrl !== "#" ? (
+                  <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
+                    Link
+                  </a>
+                ) : null}
               </div>
             </div>
           </article>

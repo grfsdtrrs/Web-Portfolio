@@ -12,15 +12,15 @@ export const profile = {
   name: "Sophia Nicole Grefaldo",
   image: "/images/Profile/sng.jpg",
   headline:
-    "A 4th year Bachelor of Science in Computer Science student focused on full-stack web development, practical problem solving, and clean user experiences.",
+    "Computer Science Graduate with a passion for software development, machine learning, and multimedia design",
   about:
-    "I am a 4th year BSCS student with growing experience in frontend interfaces, backend APIs, databases, and collaborative software projects. This section is ready for your biography, academic background, career goals, and personal strengths.",
+    "I am a Computer Science graduate with hands-on experience in full-stack development, machine learning, and database-driven applications. I have built web and mobile projects such as DIANA, Palayon, and PitakApp, applying clustering and predictive modeling to real-world domains like healthcare, agriculture, and finance. I am excited to contribute to software engineering roles that combine data-driven problem solving, clean code, and user-centered design.",
   highlights: [
-    { value: "4th", label: "Year BSCS Student" },
-    { value: "6+", label: "Project Placeholders" },
-    { value: "Full", label: "Stack Learning Path" },
-    { value: "Open", label: "To Opportunities" }
-  ]
+  { value: "CS", label: "Computer Science Graduate" },
+  { value: "3+", label: "ML-Driven Projects" },         // DIANA, Palayon, PitakApp
+  { value: "Full-Stack", label: "Web & Mobile Apps" },
+  { value: "Open", label: "To Opportunities" }
+]
 };
 
 export const skills = [
@@ -60,7 +60,7 @@ export const projects = [
       "Created a professional web portfolio website to showcase academic and personal projects, technical competencies, and career achievements. Implemented a responsive design to ensure accessibility across desktop and mobile devices.",
     stack: ["Next.js", "React","Javascript","CSS","Node.js","Codex"],
     demoUrl: "#",
-    repoUrl: "#"
+    repoUrl: "https://sophiagrefaldo.vercel.app"
   },
   {
     title: "AI Assistance",
@@ -82,7 +82,7 @@ export const projects = [
       "Implemented machine learning clustering models to classify risk based on blood biomarker data.",
     stack: ["Go","React","Flask", "PostgreSQL"],
     demoUrl: "#",
-    repoUrl: "#"
+    repoUrl: "https://diana-v2.vercel.app/"
   },
   {
     title: "Web-Based Payroll Management System",
@@ -206,6 +206,14 @@ export const certifications = [
       "Completed the IBM AI Developer Professional Certificate, gaining hands-on experience in artificial intelligence, machine learning fundamentals, Python programming, and AI application development."
   },
   {
+    date: "2026",
+    title: "Job Ready: Employability Skills",
+    issuer: "Wadhwani Foundation",
+    credentialUrl: "",
+    description:
+      "Completed training on core employability competencies including effective communication, professionalism, problem-solving, digital literacy, self-management, and interview preparation to build workplace readiness."
+  },
+  {
     date: "2025",
     title: "CompTIA Tech+",
     issuer: "CompTIA",
@@ -221,20 +229,13 @@ export const certifications = [
     description:
       "Completed foundational training in cloud computing through Google Cloud, covering core concepts such as cloud infrastructure, virtualization, storage, networking, and basic cloud service management."
   },
-  {
-    date: "2024",
-    title: "AI and Machine Learning Workshop",
-    issuer: "Organization Name",
-    credentialUrl: "",
-    description:
-      "Placeholder for training focused on artificial intelligence, machine learning concepts, data analysis, computer vision, or chatbot development."
-  }
+  
 ];
 
 export const contact = [
-  { label: "Email", value: "grefaldo.sophianicole@gmail.com", href: "mailto:your.email@example.com" },
+  { label: "Email", value: "grefaldo.sophianicole@gmail.com", href: "mailto:grefaldo.sophianicole@gmail.com" },
   { label: "Phone", value: "0906 398 7872", href: "tel:+639000000000" },
   { label: "Location", value: "Laguna, Philippines", href: "#" },
-  { label: "GitHub", value: "github.com/yourusername", href: "https://github.com/yourusername" },
-  { label: "LinkedIn", value: "linkedin.com/in/yourusername", href: "https://linkedin.com/in/yourusername" }
+  { label: "GitHub", value: "github.com/grfsdtrrs", href: "https://github.com/grfsdtrrs" },
+  { label: "LinkedIn", value: "linkedin.com/in/grefaldosophianicole", href: "https://www.linkedin.com/in/grefaldosophianicole/" }
 ];
