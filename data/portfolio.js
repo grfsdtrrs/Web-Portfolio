@@ -5,7 +5,8 @@ export const navItems = [
   { label: "Projects", href: "/projects", pageHref: "/projects" },
   { label: "Experience", href: "/experience", pageHref: "/experience" },
   { label: "Certifications", href: "/certifications", pageHref: "/certifications" },
-  { label: "Contact", href: "/contact", pageHref: "/contact" }
+  { label: "Contact", href: "/contact", pageHref: "/contact" },
+  { label: "OJT", href: "/ojt", pageHref: "/ojt" }
 ];
 
 export const profile = {
@@ -26,45 +27,58 @@ export const profile = {
 export const skills = [
   {
     title: "Programming Languages",
-    items: [ "Python", "C++", "C#", "PHP", "Kotlin" ]
+    items: ["Python", "C++", "C#", "PHP", "Kotlin", "TypeScript", "JavaScript"]
   },
   {
     title: "Web Development",
-    items: [ "HTML", "CSS", "JavaScript", "ASP.NET", "Streamlit" ]
+    items: ["React", "FastAPI", "HTML", "CSS", "ASP.NET", "Streamlit"]
   },
   {
     title: "Database",
-    items: ["MySQL", "MS Access", "Chroma DB"]
+    items: ["MySQL", "MS Access", "PostgreSQL"]
   },
   {
     title: "Software & Tools",
-    items: ["Microsoft Office", "GitHub","Visual Studio", "Android Studio", "Power Automate" ]
+    items: ["Microsoft Office", "GitHub", "Visual Studio", "Figma", "Android Studio", "Power Automate"]
   },
   {
     title: "Multimedia & Design",
-    items: ["Adobe Photoshop", "Adobe Lightroom", "Canva", "Premiere Pro","Filmora"]
+    items: ["Adobe Photoshop", "Adobe Lightroom", "Canva", "Premiere Pro", "Filmora"]
   },
   {
     title: "AI Tools",
-    items: ["ChatGPT", "Gemini", "Claude","Perplexity","Codex","Roboflow" ]
+    items: ["ChatGPT", "Gemini", "Claude", "Perplexity", "Codex", "Microsoft Copilot"]
+  },
+  {
+    title: "AI/ML Libraries & Frameworks",
+    items: ["LangChain", "LangGraph", "Hugging Face Transformers", "ChromaDB", "FAISS", "TensorFlow Lite", "OpenCV"]
   },
 ];
 
 export const projects = [
   {
-    title: "Personal Portfolio Website",
-    short: "SMS",
-    type: "Personal Project",
-    image: "/images/Profile/webportfolio.png",
-    description:
-      "Created a professional web portfolio website to showcase academic and personal projects, technical competencies, and career achievements. Implemented a responsive design to ensure accessibility across desktop and mobile devices.",
-    stack: ["Next.js", "React","Javascript","CSS","Node.js","Codex"],
-    demoUrl: "#",
-    repoUrl: "https://sophiagrefaldo.vercel.app"
+  title: "AI - Powered Manufacturing Knowledge & Intelligence Platform (MKIP)",
+  short: "MKIP",
+  type: "OJT Project",
+  image: "/images/Profile/MKIP.png",
+  description:
+    "Developed the frontend of a manufacturing knowledge platform with role-based user/admin interfaces and document management. Prepared Phase 2 for AI-powered search using Ollama and pgvector.",
+  stack: [
+    "React",
+    "TypeScript",
+    "Material UI",
+    "FastAPI",
+    "PostgreSQL",
+    "Ollama",
+    "pgvector",
+    "Figma"
+  ],
+  demoUrl: "#",
+  repoUrl: "#"
   },
   {
-    title: "AI Assistance",
-    short: "SMS",
+    title: "Assisted Training, Learning and System (ATLAS)",
+    short: "AI Chatbot",
     type: "OJT Project",
     image: "/images/Profile/aiassistance.png",
     description:
@@ -83,6 +97,17 @@ export const projects = [
     stack: ["Go","React","Flask", "PostgreSQL"],
     demoUrl: "#",
     repoUrl: "https://diana-v2.vercel.app/"
+  },
+  {
+    title: "Personal Portfolio Website",
+    short: "SMS",
+    type: "Personal Project",
+    image: "/images/Profile/webportfolio.png",
+    description:
+      "Created a professional web portfolio website to showcase academic and personal projects, technical competencies, and career achievements. Implemented a responsive design to ensure accessibility across desktop and mobile devices.",
+    stack: ["Next.js", "React","Javascript","CSS","Node.js","Codex"],
+    demoUrl: "#",
+    repoUrl: "https://sophiagrefaldo.vercel.app"
   },
   {
     title: "Web-Based Payroll Management System",
@@ -239,3 +264,109 @@ export const contact = [
   { label: "GitHub", value: "github.com/grfsdtrrs", href: "https://github.com/grfsdtrrs" },
   { label: "LinkedIn", value: "linkedin.com/in/grefaldosophianicole", href: "https://www.linkedin.com/in/grefaldosophianicole/" }
 ];
+export const ojt = {
+  title: "On-the-Job Training",
+  company: "Denso Ten Solutions Philippines Corporation",
+  department: "Information System Department – Onsite Services Section",
+  role: "OJT Intern",
+  period: "May 11, 2026 – May 11, 2026",
+  hours: "480 Hours",
+  location: "Laguna Technopark, Santa Rosa, Laguna / Ortigas Center, Pasig City",
+  supervisor: "Jonathan Medalla",
+
+  overview:
+    "Completed a 480-hour practicum at Denso Ten Solutions Philippines Corporation under the Information System Department. The internship focused on developing an AI-assisted web application called ATLAS for document upload, summarization, question answering, template downloading, and administrative management, while also providing exposure to onsite technical support in the production environment.",
+
+  companyBackground:
+    "Denso Ten Solutions Philippines Corporation is a company specializing in automotive electronics and software engineering. It serves as a Knowledge Process Outsourcing and offshore development center that supports global automotive technologies such as embedded software, in-vehicle infotainment systems, navigation systems, ECUs, and vehicle control solutions.",
+
+  responsibilities: [
+    "Designed, developed, and enhanced an AI-assisted web application for document upload, summarization, intelligent question answering, and template downloading.",
+    "Built frontend and backend features using Python and Streamlit while applying Object-Oriented Programming principles for maintainable code structure.",
+    "Integrated LangChain, Groq API, Hugging Face Transformers, ChromaDB, and local storage for document processing, semantic retrieval, and AI-generated responses.",
+    "Implemented administrator tools for file management, uploads, user management, logs, and monitoring of user activities.",
+    "Performed research on embedding models, vector databases, workflow automation, and UI improvements to identify scalable solutions.",
+    "Conducted functional testing, debugging, code refactoring, and continuous enhancement based on mentor feedback and presentation reviews.",
+    "Observed and assisted in onsite technical support activities in the production area, including troubleshooting operational issues."
+  ],
+
+  project: {
+    name: "ATLAS (Assistant Training, Learning and System)",
+    description:
+      "A web-based document intelligence workspace that allows users to interact with company documents through AI-powered summarization and Retrieval-Augmented Generation-based question answering.",
+    objectives: [
+      "Provide a centralized, role-based document platform for administrators and employees.",
+      "Automatically summarize uploaded documents using AI.",
+      "Enable question-and-answer conversations grounded on document content.",
+      "Generate suggested questions to guide users in exploring documents.",
+      "Prevent duplicate uploads and manage file revisions through hashing and versioning.",
+      "Preserve user chat history across sessions.",
+      "Provide categorized downloadable templates for employees."
+    ]
+  },
+
+  modules: [
+    "Authentication Module – unified login and registration with role-based routing.",
+    "User Workspace – document library, chat interface, AI summarization, suggested questions, and persistent chat history.",
+    "Download Templates – categorized template browsing and download functionality.",
+    "Administrator Module – dashboard, file management, uploads, folder creation, activity logs, and user management.",
+    "AI Core – LangChain pipelines for summarization, FAQ generation, and retrieval-based question answering."
+  ],
+
+  techStack: [
+    "Python",
+    "Streamlit",
+    "LangChain",
+    "Groq API",
+    "Gemini",
+    "Hugging Face Transformers",
+    "PyMuPDF",
+    "EasyOCR",
+    "ChromaDB",
+    "FAISS",
+    "JSON",
+    "CSV",
+    "Python-dotenv",
+    "Microsoft OneDrive",
+    "Power Automate"
+  ],
+
+  challenges: [
+    {
+      title: "Gemini API token limits",
+      solution:
+        "Shifted embedding generation to Hugging Face Transformers and used alternative LLM options to reduce dependency on a single rate-limited API."
+    },
+    {
+      title: "Duplicate uploads",
+      solution:
+        "Implemented SHA-256 hash-based validation and revision handling for duplicate detection and version control."
+    },
+    {
+      title: "Vector store performance",
+      solution:
+        "Optimized retrieval by using an in-memory FAISS index, tuned chunk sizes, and limited retrieved chunks per query."
+    },
+    {
+      title: "Chat history persistence",
+      solution:
+        "Added per-user conversation storage and unique conversation handling so sessions remained private and persistent."
+    }
+  ],
+
+  accomplishments: [
+    "Completed all core features including authentication, AI summarization, RAG-based Q&A, FAQ generation, duplicate detection, file versioning, persistent chat history, template downloads, and administrator tools.",
+    "Integrated five major modules into a single multipage Streamlit application.",
+    "Tested authentication, uploads, summarization, Q&A accuracy, history persistence, and UI behavior across use cases.",
+    "Improved the system continuously using mentor feedback, including admin-only uploads, optional summarization flow, and interface modernization."
+  ],
+
+  learnings:
+    "The practicum strengthened technical skills in software engineering, AI integration, debugging, system design, research, and collaborative development. It also provided practical experience in adapting academic knowledge to real-world enterprise workflows and technical support responsibilities.",
+
+  realization:
+    "The internship highlighted the importance of building reliable, user-centered systems that solve actual workplace problems. It also showed that continuous learning, experimentation, and responsiveness to feedback are essential in professional software development.",
+
+  conclusion:
+    "The practicum served as a valuable bridge between academic preparation and industry practice by providing hands-on experience in AI-assisted system development, testing, problem-solving, and professional teamwork."
+};

@@ -22,6 +22,13 @@ export function Hero({ landingOnly = false, onViewMore }) {
           <button className="button primary" type="button" onClick={onViewMore}>
             View More
           </button>
+          <a
+            className="button primary"
+            href="/resume-placeholder.pdf"
+            download="your-name-cv.pdf"
+          >
+            Download CV
+          </a>
           {!landingOnly ? (
             <>
               <Link className="button primary" href="#projects">

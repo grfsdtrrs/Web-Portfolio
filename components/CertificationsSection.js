@@ -11,11 +11,22 @@ export function CertificationsSection({ expanded = false }) {
       <div className="certification-grid">
         {certifications.map((item) => (
           <article className="certification-card" key={item.title}>
-            <div className="certification-date">{item.date}</div>
-            <div>
+            {item.image ? (
+              <div className="certification-media">
+                <img
+                  src={item.image}
+                  alt={`${item.title} certificate`}
+                  loading="lazy"
+                />
+              </div>
+            ) : null}
+
+            <div className="certification-body">
+              <div className="certification-date">{item.date}</div>
               <p className="project-type">{item.issuer}</p>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
+
               {item.credentialUrl ? (
                 <a
                   className="certification-link"
@@ -23,7 +34,20 @@ export function CertificationsSection({ expanded = false }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  View Certificate
+                  <span>View Certificate</span>
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M7 17L17 7" />
+                    <path d="M7 7h10v10" />
+                  </svg>
                 </a>
               ) : null}
             </div>
