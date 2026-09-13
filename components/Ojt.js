@@ -28,12 +28,12 @@ export function OjtSection({ expanded = false }) {
             <p>{ojt.hours}</p>
           </div>
           <div>
-            <span>Location</span>
-            <p>{ojt.location}</p>
+            <span>Company Location</span>
+            <p>{ojt.companyAddress}</p>
           </div>
           <div>
-            <span>Supervisor</span>
-            <p>{ojt.supervisor}</p>
+            <span>Deployed Location</span>
+            <p>{ojt.location}</p>
           </div>
         </div>
 
@@ -62,41 +62,56 @@ export function OjtSection({ expanded = false }) {
             </ul>
           </div>
 
-          <div className="ojt-card">
-            <h3>{ojt.project.name}</h3>
-            <p>{ojt.project.description}</p>
+          {ojt.projects.map((project) => (
+            <div className="ojt-project-group" key={project.key}>
+              <div className="ojt-card">
+                <h3>{project.name}</h3>
+                <p>{project.description}</p>
 
-            <h4>Project Objectives</h4>
-            <ul className="ojt-list">
-              {ojt.project.objectives.map((objective) => (
-                <li key={objective}>{objective}</li>
-              ))}
-            </ul>
-          </div>
+                <h4>Project Objectives</h4>
+                <ul className="ojt-list">
+                  {project.objectives.map((objective) => (
+                    <li key={objective}>{objective}</li>
+                  ))}
+                </ul>
 
-          <div className="ojt-card">
-            <h3>ATLAS Modules</h3>
-            <div className="module-grid">
-              {ojt.modules.map((module) => {
-                const [name, description] = module.split(" – ");
-                return (
-                  <article className="module-card" key={module}>
-                    <h4>{name}</h4>
-                    <p>{description}</p>
-                  </article>
-                );
-              })}
+                {project.contributions && (
+                  <>
+                    <h4>Key Contributions</h4>
+                    <ul className="ojt-list">
+                      {project.contributions.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+              </div>
+
+              <div className="ojt-card">
+                <h3>{project.name.split(" (")[0]} Modules</h3>
+                <div className="module-grid">
+                  {project.modules.map((module) => {
+                    const [name, description] = module.split(" – ");
+                    return (
+                      <article className="module-card" key={module}>
+                        <h4>{name}</h4>
+                        <p>{description}</p>
+                      </article>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div className="ojt-card">
+                <h3>{project.name.split(" (")[0]} Technology Stack</h3>
+                <div className="tech-stack">
+                  {project.techStack.map((tech) => (
+                    <span key={tech}>{tech}</span>
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div className="ojt-card">
-            <h3>Technology Stack</h3>
-            <div className="tech-stack">
-              {ojt.techStack.map((tech) => (
-                <span key={tech}>{tech}</span>
-              ))}
-            </div>
-          </div>
+          ))}
 
           <div className="ojt-card">
             <h3>Challenges and Solutions</h3>

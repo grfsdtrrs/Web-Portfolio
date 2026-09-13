@@ -1,3 +1,4 @@
+
 import { certifications } from "@/data/portfolio";
 
 export function CertificationsSection({ expanded = false }) {
@@ -12,13 +13,21 @@ export function CertificationsSection({ expanded = false }) {
         {certifications.map((item) => (
           <article className="certification-card" key={item.title}>
             {item.image ? (
-              <div className="certification-media">
+              <a
+                className="certification-media"
+                href={item.credentialUrl || item.image}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`View ${item.title} certificate`}
+              >
                 <img
                   src={item.image}
                   alt={`${item.title} certificate`}
                   loading="lazy"
+                  width={250}
+                  height={180}
                 />
-              </div>
+              </a>
             ) : null}
 
             <div className="certification-body">

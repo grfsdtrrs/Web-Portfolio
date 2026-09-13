@@ -754,8 +754,9 @@ textarea {
 .project-card {
   display: grid;
   grid-template-rows: auto 1fr;
-  height: 620px;
-  overflow: hidden;
+  height: auto;
+  min-height: 620px;
+  overflow: visible;
   transition:
     background-color 220ms ease,
     border-color 220ms ease,
@@ -862,7 +863,6 @@ textarea {
   gap: 12px;
   padding: 18px;
 }
-
 .project-body p {
   margin: 0;
   color: var(--text-muted);
@@ -1379,4 +1379,97 @@ textarea {
   background: rgba(139, 92, 246, 0.14);
   color: #ddd6fe;
   font-size: 0.88rem;
+}
+.certification-media {
+  display: block;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f4f4f5;
+}
+
+.certification-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+.project-contribution {
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  border-left: 3px solid currentColor;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+}
+
+.project-contribution-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25rem;
+  opacity: 0.7;
+}
+
+.project-contribution p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.demo-media {
+  display: grid;
+  gap: 20px;
+  max-width: 960px;
+}
+
+.demo-media .preview-video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.demo-media .preview-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.demo-image {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-strong);
+}
+.demo-gallery-group {
+  margin-bottom: 2.5rem;
+}
+
+.demo-gallery-group:last-child {
+  margin-bottom: 0;
+}
+
+.demo-gallery-label {
+  margin: 0 0 1rem;
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
+.demo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.demo-gallery .demo-image {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
 }
