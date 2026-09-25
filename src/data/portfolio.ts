@@ -22,7 +22,7 @@ export const navItems: NavItem[] = [
 
 export const profile: Profile = {
   name: "Sophia Nicole Grefaldo",
-  image: "public/images/Profile/sng.jpg",
+  image: "/images/Profile/sng.jpg",
   headline:
     "Computer Science Graduate with a passion for software development, machine learning, and multimedia design",
   about:
