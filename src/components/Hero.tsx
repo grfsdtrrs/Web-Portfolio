@@ -247,7 +247,7 @@ export function Hero({ onExplore, onConnect, onViewMore, isRevealed }: HeroProps
                       <div className="flex items-center gap-2">
                         <div className="w-8 h-8 rounded-lg bg-zinc-950 dark:bg-white text-white dark:text-zinc-950 flex items-center justify-center font-extrabold text-xs tracking-wider">
                           <img
-                            src="src/images/Profile/GRFS.png"
+                            src="/images/Profile/GRFS.png"
                             alt="Profile"
                             className="w-full h-full object-cover"
                           />

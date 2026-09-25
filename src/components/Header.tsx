@@ -27,7 +27,7 @@ export function Header({ activeSection, onNavigate }: HeaderProps) {
         >
           <div className="w-9 h-9 rounded-lg bg-cyan-500/10 dark:bg-gradient-to-br dark:from-cyan-500/20 dark:to-blue-600/20 border border-cyan-500/40 flex items-center justify-center text-cyan-600 dark:text-cyan-400 font-extrabold text-base tracking-wider shadow-sm dark:shadow-[0_0_15px_rgba(6,182,212,0.3)] group-hover:shadow-md dark:group-hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] group-hover:border-cyan-500 transition-all duration-300">
             <img 
-              src="src/images/Profile/GRFS.png"
+              src="/images/Profile/GRFS.png"
               alt="Logo"
               className="w-full h-full object-cover rounded-lg"
             />

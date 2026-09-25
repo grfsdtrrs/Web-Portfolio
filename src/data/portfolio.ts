@@ -22,7 +22,7 @@ export const navItems: NavItem[] = [
 
 export const profile: Profile = {
   name: "Sophia Nicole Grefaldo",
-  image: "src/images/Profile/sng.jpg",
+  image: "public/images/Profile/sng.jpg",
   headline:
     "Computer Science Graduate with a passion for software development, machine learning, and multimedia design",
   about:
@@ -77,9 +77,9 @@ export const projects: Project[] = [
     slug: "mkip",
     short: "WEB",
     type: "OJT Project",
-    image: "src/images/Profile/MKIP.png",
+    image: "/images/Profile/MKIP.png",
     images: [
-      "src/images/Profile/MKIP.png",
+      "/images/Profile/MKIP.png",
     ],
     description:
       "A manufacturing knowledge platform with role-based user and admin interfaces for document management, extended into Phase 2 with AI-powered search and chatbot integration using Ollama and pgvector.",
@@ -103,39 +103,39 @@ export const projects: Project[] = [
     slug: "atlas",
     short: "WEB",
     type: "OJT Project",
-    image: "src/images/Projects/ATLAS/1.png",
+    image: "/images/Projects/ATLAS/1.png",
     imageGroups: [
       {
         label: "Login Screen",
         images: [
-          "src/images/Projects/ATLAS/1.png",
-          "src/images/Projects/ATLAS/0.png",
+          "/images/Projects/ATLAS/1.png",
+          "/images/Projects/ATLAS/0.png",
         ]
       },
       {
         label: "User Side",
         images: [
-          "src/images/Projects/ATLAS/2.png",
-          "src/images/Projects/ATLAS/3.png",
-          "src/images/Projects/ATLAS/4.png",
-          "src/images/Projects/ATLAS/5.png",
-          "src/images/Projects/ATLAS/6.png",
+          "/images/Projects/ATLAS/2.png",
+          "/images/Projects/ATLAS/3.png",
+          "/images/Projects/ATLAS/4.png",
+          "/images/Projects/ATLAS/5.png",
+          "/images/Projects/ATLAS/6.png",
         ]
       },
       {
         label: "Admin Side",
         images: [
-          "src/images/Projects/ATLAS/7.png",
-          "src/images/Projects/ATLAS/8.png",
-          "src/images/Projects/ATLAS/9.png",
-          "src/images/Projects/ATLAS/10.png",
+          "/images/Projects/ATLAS/7.png",
+          "/images/Projects/ATLAS/8.png",
+          "/images/Projects/ATLAS/9.png",
+          "/images/Projects/ATLAS/10.png",
         ]
       },
       {
         label: "Power Automate Workflow",
         images: [
-          "src/images/Projects/ATLAS/11.png",
-          "src/images/Projects/ATLAS/12.png",
+          "/images/Projects/ATLAS/11.png",
+          "/images/Projects/ATLAS/12.png",
 
         ]
       }
@@ -152,7 +152,7 @@ export const projects: Project[] = [
     title: "DIANA: Cluster-Based Predictive Modeling of Type 2 Diabetes Risk Using Blood Biomarkers",
     slug: "diana",
     short: "WEB",
-    image: "src/images/Profile/DIANA.png",
+    image: "/images/Profile/DIANA.png",
     type: "Thesis",
     description:
       "A machine learning system that applies clustering models to classify Type 2 diabetes risk from blood biomarker data.",
@@ -167,7 +167,7 @@ export const projects: Project[] = [
     slug: "personal-portfolio",
     short: "WEB",
     type: "Personal Project",
-    image: "src/images/Profile/webp.png",
+    image: "/images/Profile/webp.png",
     description:
       "A professional web portfolio built with AI-assisted development to showcase academic and personal projects, technical skills, and career achievements, with a fully responsive layout across devices.",
     contribution:
@@ -181,7 +181,7 @@ export const projects: Project[] = [
     slug: "payroll-management-system",
     short: "WEB",
     type: "Payroll System",
-    image: "src/images/Profile/webpayroll.png",
+    image: "/images/Profile/webpayroll.png",
     description:
       "A payroll management web app built with AI-assisted development, featuring automated payroll calculations, employee record management, and secure local data handling.",
     contribution:
@@ -194,7 +194,7 @@ export const projects: Project[] = [
     title: "Palayon: Machine Learning Mobile App for Rice Disease Detection",
     slug: "palayon",
     short: "MOBILE APP",
-    image: "src/images/Profile/Palayon.png",
+    image: "/images/Profile/Palayon.png",
     type: "Software Engineering Project",
     description:
       "An offline Android app that uses image-based machine learning to detect rice diseases, built with full documentation support.",
@@ -208,7 +208,7 @@ export const projects: Project[] = [
     title: "PitakApp – Expense Prediction Application",
     slug: "pitakapp",
     short: "MOBILE APP",
-    image: "src/images/Profile/pitakapp.png",
+    image: "/images/Profile/pitakapp.png",
     type: "Academic Project",
     description:
       "An Android budgeting app with machine learning-based expense forecasting, powered by a predictive model trained on business expense data, with full documentation support.",
@@ -222,7 +222,7 @@ export const projects: Project[] = [
     title: "Bus Ticket Reservation System",
     slug: "bus-ticket-reservation-system",
     short: "WEB",
-    image: "src/images/Profile/buslink.png",
+    image: "/images/Profile/buslink.png",
     type: "Academic Project",
     description:
       "A web-based bus reservation system with seat booking and reservation management, built using ASP.NET.",
@@ -236,7 +236,7 @@ export const projects: Project[] = [
     title: "Modified Connect4 Game",
     slug: "modified-connect4",
     short: "GAME",
-    image: "src/images/Profile/connect4.png",
+    image: "/images/Profile/connect4.png",
     type: "Academic Project",
     description:
       "An interactive Connect Four game with multiplayer and AI modes, featuring game-state tracking, winner detection, and responsive gameplay.",
@@ -250,7 +250,7 @@ export const projects: Project[] = [
     title: "Unity Game – Dino-Inspired Runner",
     slug: "unity-dino-runner",
     short: "GAME",
-    image: "src/images/Profile/dino.png",
+    image: "/images/Profile/dino.png",
     type: "Game Development Project",
     description:
       "A 2D endless runner featuring a Luffy-inspired character, with obstacle avoidance, score tracking, and progressively increasing difficulty.",
@@ -264,7 +264,7 @@ export const projects: Project[] = [
     title: "Unity Game – Flappy Bird Clone",
     slug: "unity-flappy-bird-clone",
     short: "GAME",
-    image: "src/images/Profile/flappybird.png",
+    image: "/images/Profile/flappybird.png",
     type: "Game Development Project",
     description:
       "A 2D arcade-style Unity game with a start menu, leaderboard, physics-based controls, obstacle generation, and collision detection for an engaging, challenging experience.",
@@ -318,7 +318,7 @@ export const certifications: Certification[] = [
     title: "Job Ready: Employability Skills",
     issuer: "Wadhwani Foundation",
     credentialUrl: "https://web.certificate.wfglobal.org/en/certificate?certificateId=6a54de479ca40b8cfd4b76c7",
-    image: "src/images/certifications/wadhwani.png",
+    image: "/images/certifications/wadhwani.png",
     description:
       "Completed training on core employability competencies including effective communication, professionalism, problem-solving, digital literacy, self-management, and interview preparation to build workplace readiness."
   },
@@ -327,7 +327,7 @@ export const certifications: Certification[] = [
     title: "CompTIA Tech+",
     issuer: "CompTIA",
     credentialUrl: "https://www.credly.com/earner/earned/badge/5a6d0c77-815a-4b38-a099-62d1402a55b2",
-    image: "src/images/certifications/comptia.png",
+    image: "/images/certifications/comptia.png",
     description:
       "Earned foundational knowledge in core IT concepts including hardware, software, networking, cybersecurity, and troubleshooting through the CompTIA Tech+ certification program."
   },
@@ -336,7 +336,7 @@ export const certifications: Certification[] = [
     title: "Google Cloud Computing Foundations",
     issuer: "Google Cloud",
     credentialUrl: "https://www.credly.com/earner/earned/badge/8ddb9be5-56e3-44da-b3fa-2890dbc17ad9",
-    image: "src/images/certifications/googlecloud.png",
+    image: "/images/certifications/googlecloud.png",
     description:
       "Completed foundational training in cloud computing through Google Cloud, covering core concepts such as cloud infrastructure, virtualization, storage, networking, and basic cloud service management."
   }
