@@ -297,19 +297,27 @@ export const experience: ExperienceItem[] = [
   }
 ];
 
+
 export const certifications: Certification[] = [
   {
     date: "2026",
     title: "IBM AI Developer Professional Certificate",
     issuer: "Coursera/IBM",
-    credentialUrl: "https://www.coursera.org",
-    image: `data:image/svg+xml;utf8,${encodeURIComponent(`
-      <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-        <rect width="1200" height="800" fill="#0f0f0f"/>
-        <rect x="120" y="120" width="960" height="560" rx="32" fill="#0f0f0f"/>
-        <text x="600" y="456" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="180" font-weight="700" fill="#ffffff" letter-spacing="10"></text>
-      </svg>
-    `)}`,
+    credentialUrl: "https://coursera.org/verify/professional-cert/DUQX8C9JWA2C",
+    image: "/images/certifications/ibm.png",
+    images: [
+      "/images/certifications/IBM/softeng.png",
+      "/images/certifications/IBM/ai.png",
+      "/images/certifications/IBM/genai.png",
+      "/images/certifications/IBM/prompt.png",
+      "/images/certifications/IBM/ui.png",
+      "/images/certifications/IBM/python.png",
+      "/images/certifications/IBM/aiapp.png",
+      "/images/certifications/IBM/building.png",
+      "/images/certifications/IBM/elev.png",
+      "/images/certifications/IBM/prep.png"
+
+    ],
     description:
       "Completed the IBM AI Developer Professional Certificate, gaining hands-on experience in artificial intelligence, machine learning fundamentals, Python programming, and AI application development."
   },

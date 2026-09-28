@@ -18,6 +18,18 @@ interface CertificationsSectionProps {
 
 export function CertificationsSection({ expanded = false }: CertificationsSectionProps) {
   const [selectedCert, setSelectedCert] = useState<Certification | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  const selectedImages = selectedCert?.images?.length
+    ? selectedCert.images
+    : selectedCert?.image
+      ? [selectedCert.image]
+      : [];
+
+  const handleOpenCert = (item: Certification) => {
+    setSelectedCert(item);
+    setSelectedImageIndex(0);
+  };
 
   return (
     <section id="certifications" className="py-16 border-t border-slate-200 dark:border-slate-800/80 relative transition-colors duration-200">
@@ -44,7 +56,7 @@ export function CertificationsSection({ expanded = false }: CertificationsSectio
                 {/* Certificate Image Banner */}
                 {item.image && (
                   <div
-                    onClick={() => setSelectedCert(item)}
+                    onClick={() => handleOpenCert(item)}
                     className="relative h-48 w-full bg-slate-100 dark:bg-[#050b14] overflow-hidden cursor-pointer"
                     title="Click to view full certificate"
                   >
@@ -118,7 +130,7 @@ export function CertificationsSection({ expanded = false }: CertificationsSectio
                 <div className="flex items-center gap-3">
                   {item.image && (
                     <button
-                      onClick={() => setSelectedCert(item)}
+                      onClick={() => handleOpenCert(item)}
                       className="inline-flex items-center gap-1 text-xs font-mono text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors cursor-pointer"
                       title="Enlarge certificate image"
                     >
@@ -182,14 +194,39 @@ export function CertificationsSection({ expanded = false }: CertificationsSectio
             </div>
 
             {/* Full-res Certificate Image */}
-            {selectedCert.image && (
+            {selectedImages.length > 0 && (
               <div className="rounded-xl overflow-hidden bg-slate-950 border border-slate-200 dark:border-slate-800 shadow-inner max-h-[55vh] flex items-center justify-center mb-4">
                 <img
-                  src={selectedCert.image}
+                  src={selectedImages[selectedImageIndex]}
                   alt={selectedCert.title}
                   referrerPolicy="no-referrer"
                   className="w-full h-auto max-h-[55vh] object-contain"
                 />
+              </div>
+            )}
+
+            {selectedImages.length > 1 && (
+              <div className="mb-4 flex gap-2 overflow-x-auto pb-1">
+                {selectedImages.map((image, index) => (
+                  <button
+                    key={`${selectedCert.title}-${index}`}
+                    type="button"
+                    onClick={() => setSelectedImageIndex(index)}
+                    className={`relative shrink-0 w-20 h-14 rounded-lg overflow-hidden border transition-all ${
+                      index === selectedImageIndex
+                        ? "border-cyan-500 ring-2 ring-cyan-500/20"
+                        : "border-slate-200 dark:border-slate-700 hover:border-cyan-400"
+                    }`}
+                    title={`Open certificate image ${index + 1}`}
+                  >
+                    <img
+                      src={image}
+                      alt={`${selectedCert.title} preview ${index + 1}`}
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover"
+                    />
+                  </button>
+                ))}
               </div>
             )}
 

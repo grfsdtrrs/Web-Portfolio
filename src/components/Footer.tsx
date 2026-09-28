@@ -12,10 +12,7 @@ export function Footer() {
         {/* Copyright matching Reference Image */}
         <div className="text-center sm:text-left">
           <p className="text-slate-700 dark:text-slate-300 font-medium">
-            Copyright 2026 Sophia Nicole Grefaldo | all rights reserved
-          </p>
-          <p className="text-[11px] text-slate-400 dark:text-slate-500 mt-0.5">
-            Designed & Developed with Cyber High-Tech Architecture • BSCS
+            Copyright 2026 Sophia Nicole Grefaldo 
           </p>
         </div>
 

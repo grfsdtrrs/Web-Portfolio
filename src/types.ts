@@ -49,6 +49,7 @@ export interface Certification {
   issuer: string;
   credentialUrl?: string;
   image?: string;
+  images?: string[];
   description: string;
 }
 
