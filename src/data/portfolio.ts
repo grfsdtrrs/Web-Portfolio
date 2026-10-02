@@ -301,11 +301,35 @@ export const experience: ExperienceItem[] = [
 export const certifications: Certification[] = [
   {
     date: "2026",
+    title: "IBM Data Analyst Professional Certificate",
+    issuer: "Coursera/IBM",
+    credentialUrl: "https://coursera.org/share/73e1c04fa998ada89960ebcc78874f84",
+    image: "/images/certifications/IBM/introdata.png",
+    images: [
+      "/images/certifications/IBM/introdata.png",
+      "/images/certifications/IBM/softeng.png",
+      "/images/certifications/IBM/ai.png",
+      "/images/certifications/IBM/genai.png",
+      "/images/certifications/IBM/prompt.png",
+      "/images/certifications/IBM/ui.png",
+      "/images/certifications/IBM/python.png",
+      "/images/certifications/IBM/aiapp.png",
+      "/images/certifications/IBM/building.png",
+      "/images/certifications/IBM/elev.png",
+      "/images/certifications/IBM/prep.png"
+
+    ],
+    description:
+      "Completed the IBM Data Analyst Professional Certificate, gaining hands-on experience in data analysis, visualization, and interpretation using various tools and techniques."
+  },
+  {
+    date: "2026",
     title: "IBM AI Developer Professional Certificate",
     issuer: "Coursera/IBM",
     credentialUrl: "https://coursera.org/verify/professional-cert/DUQX8C9JWA2C",
     image: "/images/certifications/ibm.png",
     images: [
+      "/images/certifications/ibm.png",
       "/images/certifications/IBM/softeng.png",
       "/images/certifications/IBM/ai.png",
       "/images/certifications/IBM/genai.png",
