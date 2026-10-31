@@ -58,16 +58,12 @@ export const skills: SkillCategory[] = [
   },
   {
     title: "AI Developer & Productivity Tools",
-    items: ["Cursor", "Claude Code", "Codex", "Google AI Studio", "GitHub Copilot", "ChatGPT", "Gemini", "Perplexity"]
+    items: ["Cursor", "Claude Code", "Codex", "Google AI Studio", "GitHub Copilot", "ChatGPT", "Gemini", "Perplexity","Roboflow", "Google Teachable Machine",]
   },
   {
     title: "AI Concepts & Architecture",
     items: ["RAG Workflows", "Embeddings", "Vector Databases", "Document Search"]
   },
-  {
-    title: "AI Platforms & Productivity Tools",
-    items: ["Roboflow", "Google Teachable Machine", "Cursor", "Claude Code", "Codex", "Google AI Studio", "GitHub Copilot", "ChatGPT"]
-  }
 ];
 
 

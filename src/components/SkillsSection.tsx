@@ -15,8 +15,15 @@ export function SkillsSection({ expanded = false }: SkillsSectionProps) {
     if (title.includes("Database")) return Database;
     if (title.includes("Software")) return Cpu;
     if (title.includes("Multimedia")) return Palette;
-    if (title.includes("AI Tools")) return Bot;
+    if (title.includes("AI Developer") || title.includes("AI Tools")) return Bot;
+    if (title.includes("AI Concepts")) return Sparkles;
     return Sparkles;
+  };
+
+  const getFilterLabel = (title: string) => {
+    if (title.startsWith("AI Developer")) return "AI Developer Tools";
+    if (title.startsWith("AI Concepts")) return "AI Concepts";
+    return title.split(" ")[0];
   };
 
   return (
@@ -62,7 +69,7 @@ export function SkillsSection({ expanded = false }: SkillsSectionProps) {
                     : "bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-300 hover:border-slate-300 dark:hover:border-slate-700 shadow-sm"
                 }`}
               >
-                {group.title.split(" ")[0]}
+                {getFilterLabel(group.title)}
               </button>
             ))}
           </div>
