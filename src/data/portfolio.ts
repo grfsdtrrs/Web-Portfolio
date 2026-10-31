@@ -307,16 +307,7 @@ export const certifications: Certification[] = [
     image: "/images/certifications/IBM/introdata.png",
     images: [
       "/images/certifications/IBM/introdata.png",
-      "/images/certifications/IBM/softeng.png",
-      "/images/certifications/IBM/ai.png",
-      "/images/certifications/IBM/genai.png",
-      "/images/certifications/IBM/prompt.png",
-      "/images/certifications/IBM/ui.png",
       "/images/certifications/IBM/python.png",
-      "/images/certifications/IBM/aiapp.png",
-      "/images/certifications/IBM/building.png",
-      "/images/certifications/IBM/elev.png",
-      "/images/certifications/IBM/prep.png"
 
     ],
     description:
